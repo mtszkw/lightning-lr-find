@@ -1,8 +1,7 @@
 # [Lightning LR Find](https://enjoymachinelearning.com/posts/find-lr-pytorch-lightning/)
 ### Automatically finding good learning rate for your network with PyTorch Lightning
 
-Read full blog post: https://enjoymachinelearning.com/posts/find-lr-pytorch-lightning/  
-This project introduces Learning Rate Finder class implemented in PyTorch Lightning and compares results of LR Find and manual tuning.
+This project introduces Learning Rate Finder class implemented in PyTorch Lightning and compares results of LR Find and manual tuning. Read full post: https://enjoymachinelearning.com/posts/find-lr-pytorch-lightning/  
 
 Among of all hyperparameters used in machine learning, learning rate is probably the very first one you hear about. It may also the one that you start tuning in the first place. You can find the right value with a bit of hyper parameter optimization, running tons of training sessions or you can let tools do it, much faster. Nowadays, many libraries implement LR Finder or “LR Range Test”.
 
