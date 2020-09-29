@@ -6,7 +6,9 @@ This project introduces Learning Rate Finder class implemented in PyTorch Lightn
 
 Among of all hyperparameters used in machine learning, learning rate is probably the very first one you hear about. It may also the one that you start tuning in the first place. You can find the right value with a bit of hyper parameter optimization, running tons of training sessions or you can let tools do it, much faster. Nowadays, many libraries implement LR Finder or “LR Range Test”.
 
-![](https://enjoymachinelearning.com/assets/images/009_lr_plot.png)
+<p align="center">
+<img src="https://enjoymachinelearning.com/assets/images/009_lr_plot.png">
+</p>
 
 ### Example: LR find for Fashion MNIST classification
 
