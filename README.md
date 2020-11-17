@@ -1,7 +1,7 @@
-# [Lightning LR Find](https://enjoymachinelearning.com/posts/find-lr-pytorch-lightning/)
+# [Lightning LR Find](https://towardsdatascience.com/how-to-decide-on-learning-rate-6b6996510c98)
 ### Automatically finding good learning rate for your network with PyTorch Lightning
 
-This project introduces Learning Rate Finder class implemented in PyTorch Lightning and compares results of LR Find and manual tuning. Read full post: https://enjoymachinelearning.com/posts/find-lr-pytorch-lightning/  
+This project introduces Learning Rate Finder class implemented in PyTorch Lightning and compares results of LR Find and manual tuning. Read full post [here](https://towardsdatascience.com/how-to-decide-on-learning-rate-6b6996510c98).
 
 Among of all hyperparameters used in machine learning, learning rate is probably the very first one you hear about. It may also the one that you start tuning in the first place. You can find the right value with a bit of hyper parameter optimization, running tons of training sessions or you can let tools do it, much faster. Nowadays, many libraries implement LR Finder or “LR Range Test”.
 
@@ -15,11 +15,11 @@ Basically I wanted to train a fairly simple convolutional neural network (LeNet)
 
 Looking at loss/LR plot (Figure 1) I was surprised because the suggested point is not exactly “halfway the sharpest downward slope”. However I couldn’t tell if that’s good or bad until I train the model. For logging and visualization I used TensorBoard to log loss and accuracy during training and validation steps. Below you can see metrics history for each of four experiments.
 
-![](https://enjoymachinelearning.com/assets/images/009_train_val_acc.png)
+![](https://enjoymachinelearning.com/assets/images/009/train_val_acc.png)
 
 Learning rate suggested by Lightning (light blue) seems to outperform other values in both training and validation. At the end it reached 88.85% accuracy on validation set which is the highest score from all experiments (Figure 2). Also loss function values were the best for the “find_lr” experiment. In the last validation step it reached loss equal 0.3091 to which is the lowest value compared to other curves (Figure 3).
 
-![](https://enjoymachinelearning.com/assets/images/009_train_val_loss.png)
+![](https://enjoymachinelearning.com/assets/images/009/train_val_loss.png)
 
 ### Conclusion
 
